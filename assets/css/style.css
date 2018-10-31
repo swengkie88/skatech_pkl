@@ -350,6 +350,9 @@ footer .copy{
         z-index: 1;
         background: rgba(0, 0, 0, .8);
     }
+    #section-1{
+        padding: 50px 0px;
+    }
     /* ======================== */
 
     /* Content responsive */
