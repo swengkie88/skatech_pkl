@@ -332,6 +332,7 @@ footer .copy{
         background: none;
     }
     #menu-toggle{
+        display: block;
         position: fixed;
         z-index: 2;
         left: 0px;
