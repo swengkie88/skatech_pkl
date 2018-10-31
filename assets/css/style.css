@@ -341,6 +341,7 @@ footer .copy{
         transition: 0.3s all;
     }
     #overlayMobile{
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
