@@ -1,0 +1,373 @@
+/* import font */
+@font-face{
+    font-family: raleway;
+    src: url('../fonts/Raleway-Medium.ttf');
+}
+/* general styling */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: raleway, sans-serif;
+}
+.container{
+    min-height: 550px;
+}
+.wrapper{
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+}
+.text-center{
+    text-align: center;
+}
+/* Navigation bar start */
+.nav-wrapper{
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+}
+nav{
+    background: #2196f3;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.18);
+    color: #f1f1f1;
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+.paddingNav{
+    padding-top: 80px;
+}
+.navbar-brand{
+    color: #fff;
+    float: left;
+    padding: 0px 20px;
+}
+.navbar-brand a{
+    color: inherit;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.navbar {
+    display: inline-block;
+}
+.navbar li{
+    margin: 0px -2.05px;
+    display: inline-block;
+    padding: 0px 15px;
+    transition: 0.3s all;
+}
+.navbar li:hover{
+    background: rgba(82, 82, 82, 0.76);
+    color: #fff;
+}
+.navbar .active{
+    background: rgba(97, 97, 97, 0.6);
+    color: #fff;
+}
+.navbar a{
+    color: inherit;
+    text-decoration: none;
+}
+.left-nav{
+    float:left;
+}
+.right-nav{
+    float: right;
+}
+.bar{
+    background: #fff;
+    display: block;
+    margin: 5px 0px;
+    height: 4px;
+    width: 32px;
+}
+.btn-toggle{
+    display: none;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 40px;
+}
+#btn-toggle2-wrapper{
+    display: block;
+    width:  40px;
+    height:  40px;
+    position:  absolute;
+    right: 34px;
+    z-index: 2;
+}
+#btn-toggle2{
+    margin: 32px 0px;
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+#btn-toggle2 span{
+    border-radius: 2px;
+    display:  block;
+    width: 35px;
+    height: 4px;
+    background: #fff;
+    margin: 6px 0px;
+}
+#btn-toggle2 span:nth-child(1){
+    transform: rotate(42deg);
+}
+#btn-toggle2 span:nth-child(2){
+    visibility: hidden;
+}
+#btn-toggle2 span:nth-child(3){
+    margin-top: -20px;
+    transform: rotate(135deg);
+}
+#menu-toggle{
+    display: none;
+}
+#menu-divider, #menu-login:hover{
+    background: none;
+}
+/* Navigation bar stop */
+
+/* Content start */
+
+/* jumbotron */
+.jumbotron{
+    background: url('../img/banner.jpg') no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    padding: 97px 0px;
+    width: 100%;
+}
+.filter-overlay{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
+.jumbotron .text-center{
+    color: #fff;
+    max-width: 450px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.jumbotron h1{
+    font-size: 2.5em;
+}
+.jumbotron i{
+    font-size: 1.2em;
+}
+/* section */
+section{
+    padding: 101px 0px;
+    box-sizing: border-box;
+    height: 420px;
+}
+section h1{
+    color: #222;
+    font-size: 1.8em;
+    margin: 20px 0px;
+}
+section.text-center p{
+    margin: 0 auto!important;
+}
+section p{
+    color: #444;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    max-width: 550px;
+}
+#section-2{
+    background: #f1f1f1;
+    height: 500px;
+}
+#section-2 h1{
+    margin-bottom: 30px;
+}
+.box3{
+    display: inline-block;
+    width: 32.3%;
+    margin: 0px 3px;
+}
+.box3 i{
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border: 2px solid #222;
+    border-radius: 50%;
+    margin: 10px 0px;
+    font-size: 1.75em;
+}
+#section-3{
+    background: #fff;
+    height: 500px;
+}
+#section-3 .box3{
+    width: 100%;
+}
+#section-3 .box3 p{
+    text-align: justify;
+}
+#section-3 .box3-wrap{
+    width: 400px;
+    position: relative;
+    margin: 4% auto;
+}
+#section-3 .box3-wrap:before{
+    position: absolute;
+    top: 0;
+    content: url(../img/icons/quote_left.png);
+    width: 30px;
+    height: 30px;
+    left: 0;
+}
+#section-3 .box3-wrap:after{
+    position: absolute;
+    top: 0;
+    content: url(../img/icons/quote_right.png);
+    width: 30px;
+    height: 30px;
+    right: 0;
+}
+/* Content stop */
+
+/* Element styling start */
+.btn-link{
+    text-decoration: none;
+    color: #FFC107;
+}
+.btn{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10px;
+    border-radius: 4px;
+    transition: 0.3s all;
+    text-decoration: none;
+    color: inherit;
+}
+.btn-block{
+    display: block;
+}
+.btn-outline{
+    color: #fff;
+    border: 2px solid #fff;
+}
+.btn-outline:hover{
+    background: #fff;
+    color: #000;
+}
+.btn-primary{
+    color: #fff!important;
+    background: #FF9800;
+}
+.btn-primary:hover{
+    background: #FFC107;
+}
+/* Element styling stop */
+
+/* Footer start */
+footer{
+    color: #fff;
+}
+footer .top{
+    padding: 20px;
+    background: #444;
+}
+footer .box3 {
+    vertical-align: top;
+}
+footer .box3 h3{
+    font-size: 1.4em;
+    margin: 10px 0px;
+}
+footer .box3 p{
+    line-height: 1.5;
+    max-width: 250px;
+}
+footer .box3 ul li{
+    list-style: none;
+    margin: 5px 0px;
+}
+footer .box3 ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+footer .copy{
+    padding: 20px;
+    background: #333;
+}
+/* Footer stop */
+
+/* Responsive start */
+@media(max-width: 768px){
+    /* Navigation bar responsive */
+    .btn-toggle{
+        display: block;
+    }
+    .nav-wrapper{
+        width: 90%;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar.nav-mobile{
+        display: block;
+    }
+    .nav-mobile li{
+        margin: 0px!important;
+        text-align: center;
+        display: block;
+    }
+    .nav-mobile li:last-child:hover{
+        background: none;
+    }
+    #menu-toggle{
+        display: block;
+        position: fixed;
+        z-index: 2;
+        left: 0px;
+        width: 100%;
+        background: #2196F3;
+        transition: 0.3s all;
+    }
+    #overlayMobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, .8);
+    }
+    /* ======================== */
+
+    /* Content responsive */
+    #section-2{
+        height: auto;
+    }
+    .box3{
+        margin: 10px 0px;
+        width: 100%;
+    }
+    #section-3 .box3-wrap{
+        width: auto;
+    }
+    /* ======================== */
+
+    /* Footer responsive */
+    footer .wrapper{
+        width: 90%;
+    }
+    /* ======================== */
+}
+/* Responsive stop */
